@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="4dp"
+    tools:context=".FragmentTwo">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Аргумент: " />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="104dp"
+            android:layout_height="39dp"
+            android:autofillHints="аргумент"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Модуль: " />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="104dp"
+            android:layout_height="39dp"
+            android:autofillHints="Модуль"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/convertButton2"
+            android:layout_width="243dp"
+            android:layout_height="44dp"
+            android:text="Перевести" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Результат" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textSize="26dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

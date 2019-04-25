@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="4dp"
+    tools:context=".FragmentOne">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" z = " />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="104dp"
+            android:layout_height="39dp"
+            android:autofillHints="действительная"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" + " />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="104dp"
+            android:layout_height="39dp"
+            android:autofillHints="мнимая"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" i " />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/convertButton1"
+            android:layout_width="243dp"
+            android:layout_height="44dp"
+            android:text="Перевести" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Результат:" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="34dp"
+            >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textSize="26dp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/textView1"
+                android:textSize="16dp" />
+    </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
